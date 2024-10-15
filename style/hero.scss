@@ -13,6 +13,8 @@
     top:10%;
     left:10%;
     width:80%;
+    opacity: 0;
+    @extend .fade-in;
     h1{
       font-size: $h1-font-size;
       color:$white;

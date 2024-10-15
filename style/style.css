@@ -39,6 +39,32 @@
   font-family: "Playfair Display", serif;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in, .hero .hero-text {
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+@keyframes dropdown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 6.4rem;
+    opacity: 1;
+  }
+}
+.dropdown, .header {
+  animation: dropdown 1s ease-out 1s forwards;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -75,6 +101,7 @@ body a {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -117,6 +144,7 @@ body a {
   top: 10%;
   left: 10%;
   width: 80%;
+  opacity: 0;
 }
 .hero .hero-text h1 {
   font-size: 9.4rem;
