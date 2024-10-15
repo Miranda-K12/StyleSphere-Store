@@ -119,15 +119,43 @@ body a {
   list-style-type: none;
 }
 .header .nav-bar-list a {
-  text-decoration: none;
   color: #ffffff;
   font-size: 2.4rem;
+  position: relative;
+}
+.header .nav-bar-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 1s ease;
+}
+.header .nav-bar-list a:hover {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.header .nav-bar-list a:hover::after {
+  transform: scaleX(1);
 }
 .header .nav-bar-list .search {
   font-size: 2.4rem;
   border-radius: 0.5rem;
   width: 16.6rem;
+  transition: width 0.3s ease;
 }
+.header .nav-bar-list .search:focus {
+  width: 20rem;
+}
+.header .basket:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
 .hero {
   background-image: url("../images/hero-img.jpg");
   background-position: center;

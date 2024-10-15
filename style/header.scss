@@ -21,18 +21,48 @@ width:10.4rem;
   font-weight: 500;
   gap: $gap-size;
   list-style-type: none;
-  a{
-  text-decoration: none;
-  color:$white;
-  font-size: 2.4rem;
-  }
+  a {
+    color: $white;
+    font-size: 2.4rem;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -3px; 
+        height: 2px; 
+        background-color: $white;
+        transform: scaleX(0); 
+        transition: transform 1s ease; 
+    }
+
+    // Hover state
+    &:hover {
+        cursor: pointer;
+        font-size: 2.5rem;
+
+        &::after {
+            transform: scaleX(1); 
+        }
+    }
+}
   .search {
   font-size: 2.4rem;
   border-radius: 0.5rem;
   width: 16.6rem;
+  transition: width 0.3s ease;
+   &:focus {
+        width: 20rem; 
+    }
 }
 }
 .basket {
   @extend %iconSize;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
 }
 }
