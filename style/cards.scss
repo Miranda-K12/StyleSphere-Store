@@ -1,0 +1,47 @@
+.card-clothes { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $gap-size;
+    margin: $big-margin 0;
+
+    .shop-card {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 2rem;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+
+        .description {
+            color: $color-dark;
+            padding: 0 $small-padding;
+
+            .product,
+            .price {
+                font-size: $subheader-font-size;
+                text-transform: uppercase;
+                font-weight: $semi-bold;
+            }
+
+            .details {
+                width: 100%;
+                background-color: $dark-purple;
+                font-size: $paraghrap-font-size;
+                color: $white;
+                font-weight: $semi-bold;
+                text-transform: uppercase;
+                padding: $small-padding;
+                border-radius: 1rem;
+                text-align: center;
+
+                &:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

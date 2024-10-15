@@ -1,0 +1,99 @@
+@import './variables.scss';
+
+.detail-info{
+  display:grid;
+  grid-template-columns: 40% 55%;
+  gap: 4.8rem;
+  display: none;
+    .detail-img{
+    width:100%;
+    height: auto;
+    border-radius: 2rem;
+}
+.detail-text{
+  .Product-name{
+    @extend %product-name;
+    position: relative;
+  }
+  .Product-name::after,
+  .full-description::after {
+    content: ""; 
+    display: block; 
+    height: 1px; 
+    background-color: $dark-purple; 
+    width: 100%; 
+    position: absolute; 
+    left: 0; 
+    bottom: -8px;
+}
+  .product-price{
+    font-size: $subheader-font-size;
+    font-weight: $semi-bold;
+  }
+  .full-description {
+    font-size: $paraghrap-font-size; 
+    line-height: 1.5; 
+    position: relative;
+}
+}
+.size-box{
+  display:flex;
+  justify-content: flex-start;
+  gap:$gap-size;
+  p{
+  font-size: $paraghrap-font-size;
+  font-weight: $semi-bold;
+}
+  .size{
+    border:2px solid $dark-purple;
+    border-radius: 2px;
+    font-size: $paraghrap-font-size;
+    width:4.8rem;
+    height:4.8rem;
+    @include flex-item;
+    font-weight: $semi-bold;
+    color:$dark-purple;
+    &:hover{
+      background-color:$dark-purple;
+      color:$white;
+      cursor: pointer;
+    }
+  }
+}
+}
+.cards-box{
+ @include flex-center;
+  gap:$medium-margin;
+  padding-top: 0;
+  background-color: aquamarine;
+}
+.bag{
+  display: inline-block;
+  margin-top: $big-margin;
+}
+.cart-btn{
+    @extend %btnStyle;
+      display: block;
+      &:hover{
+         @extend %btnHover;
+      }
+  }
+  .add-btn{
+  margin-top: $medium-margin;
+  margin-bottom: $medium-margin;
+  @extend %btnStyle;
+  display: block;
+  &:hover{
+         @extend %btnHover;
+      }
+}
+ .cards{
+    display: flex;
+    justify-content: flex-start;
+    gap: $small-gap;
+    cursor: pointer;
+     .card{
+    width:6.4rem;
+    height: auto;
+}
+}

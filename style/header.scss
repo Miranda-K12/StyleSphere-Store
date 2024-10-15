@@ -1,0 +1,37 @@
+.header{
+  background-color: $dark-purple;
+  width: 100%;
+  height: 6.4rem;
+  cursor: pointer;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left:0;
+  @include flex-center;
+  justify-content: space-around;
+ 
+ .logo{
+height: 100%;
+width:10.4rem;
+ }
+  .nav-bar-list {
+   @include flex-center;
+  font-size: $header-font-size;
+  font-weight: 500;
+  gap: $gap-size;
+  list-style-type: none;
+  a{
+  text-decoration: none;
+  color:$white;
+  font-size: 2.4rem;
+  }
+  .search {
+  font-size: 2.4rem;
+  border-radius: 0.5rem;
+  width: 16.6rem;
+}
+}
+.basket {
+  @extend %iconSize;
+}
+}

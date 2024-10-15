@@ -1,0 +1,36 @@
+.shop{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap:$small-gap;
+ margin-top: $big-margin;
+.shopping-area {
+  width: 100%;
+  border-radius: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+  img{
+    width:100%;
+    border-radius: 2rem;
+    position: relative;
+  }
+  .shop-area{
+  position: absolute;
+  background-color: $light-pink;
+  color:$dark-purple;
+  top: 70%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding:1.2rem 0;
+  border-radius: 1rem;
+  font-weight: $semi-bold;
+  letter-spacing: 1.5;
+  width:60%;
+  text-align: center;
+  &:hover{
+    border: 3px solid $dark-purple;
+  }
+  }
+  }

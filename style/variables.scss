@@ -1,0 +1,69 @@
+
+$dark-purple: #660033;
+$color-dark:#202020;
+$white:#ffffff;
+$light-pink:#FFF4F2;
+$dark-grey:	#484848;
+$h1-font-size:9.4rem;
+$div-header:3.6rem;
+$header-font-size:2.4rem;
+$subheader-font-size:2rem;
+$paraghrap-font-size:1.8rem;
+$btn:1.8rem;
+$bold:800;
+$semi-bold:600;
+$big-padding:4.8rem;
+$middle-padding:2.4rem;
+$small-padding:1.2rem;
+$big-margin:5.4rem;
+$medium-margin:3.6rem;
+$small-margin:1.6rem;
+$gap-size:3.6rem;
+$small-gap:2.4rem;
+$icon-size:2.4rem;
+%btnStyle{
+  font-size: $btn; 
+  color: $white;
+  background-color: $dark-purple;
+  padding: $small-padding;
+  border-radius: 1rem;
+  width: 16.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+%btnHover{
+  background-color: $light-pink;
+  border: 2px solid $dark-purple;
+  color:$dark-purple;
+}
+%iconSize{
+  width:$icon-size;
+  height:$icon-size;
+}
+
+%div-header-style{
+font-size: $div-header;
+font-family: "Playfair Display", serif;
+font-weight: $semi-bold;
+}
+%product-name{
+  font-size: $div-header;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:$dark-purple;
+  font-family: "Playfair Display", serif;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-item {
+  @include flex-center;
+  justify-content: center;
+}
+@mixin flex-column{
+  @include flex-center;
+  flex-direction: column;
+}

@@ -1,0 +1,119 @@
+.add-btn, .cart-btn {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #660033;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 16.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-btn:hover, .cart-btn:hover {
+  background-color: #FFF4F2;
+  border: 2px solid #660033;
+  color: #660033;
+}
+
+.detail-info .detail-text .Product-name {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #660033;
+  font-family: "Playfair Display", serif;
+}
+
+.detail-info {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  gap: 4.8rem;
+  display: none;
+}
+.detail-info .detail-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+.detail-info .detail-text .Product-name {
+  position: relative;
+}
+.detail-info .detail-text .Product-name::after,
+.detail-info .detail-text .full-description::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #660033;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+.detail-info .detail-text .product-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.detail-info .detail-text .full-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  position: relative;
+}
+.detail-info .size-box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3.6rem;
+}
+.detail-info .size-box p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.detail-info .size-box .size {
+  border: 2px solid #660033;
+  border-radius: 2px;
+  font-size: 1.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #660033;
+}
+.detail-info .size-box .size:hover {
+  background-color: #660033;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cards-box {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  padding-top: 0;
+  background-color: aquamarine;
+}
+
+.bag {
+  display: inline-block;
+  margin-top: 5.4rem;
+}
+
+.cart-btn {
+  display: block;
+}
+.add-btn {
+  margin-top: 3.6rem;
+  margin-bottom: 3.6rem;
+  display: block;
+}
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  cursor: pointer;
+}
+.cards .card {
+  width: 6.4rem;
+  height: auto;
+}/*# sourceMappingURL=detail-info.css.map */
