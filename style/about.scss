@@ -22,6 +22,7 @@
     line-height: 1.5;
     font-style: italic;
     font-size: $subheader-font-size;
+    letter-spacing: 2px;
   }
   span {
     color: $dark-purple;
@@ -57,7 +58,7 @@ h2{
         border-bottom: 1px solid $dark-purple;
 
         .questions {
-          display: flex; // Added missing display property
+          @import 'flex-center';
           justify-content: space-between;
           cursor: pointer;
           padding: 0 $small-padding;

@@ -400,6 +400,7 @@ body a {
 .about .faqs .faqs-box .box .questions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   padding: 0 1.2rem;
   color: #660033;
