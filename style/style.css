@@ -213,6 +213,80 @@ body a {
   cursor: pointer;
 }
 
+.about .about-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.4rem;
+}
+.about .about-description img {
+  border-radius: 2rem;
+  width: 100%;
+}
+.about .about-description p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.about .about-description .div-subheader {
+  color: #660033;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.about .about-description span {
+  color: #660033;
+  font-style: italic;
+  font-weight: 600;
+}
+.about .faqs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.4rem;
+}
+.about .faqs h2 {
+  font-size: 3.6rem;
+}
+.about .faqs .faqs-text {
+  width: 45%;
+  line-height: 1.5;
+  margin-top: -3.6rem;
+}
+.about .faqs .faqs-text p {
+  font-size: 1.8rem;
+}
+.about .faqs .faqs-box {
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #ffffff;
+  border: 1px solid #660033;
+  border-radius: 5px;
+}
+.about .faqs .faqs-box .box {
+  border-bottom: 1px solid #660033;
+}
+.about .faqs .faqs-box .box:last-child {
+  border-bottom: none;
+}
+.about .faqs .faqs-box .box .questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 1.2rem;
+  color: #660033;
+}
+.about .faqs .faqs-box .box .questions h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.about .faqs .faqs-box .box .answer {
+  font-size: 1.8rem;
+  color: #484848;
+  display: none;
+}
+
 .add-btn, .cart-btn, .hero .hero-text .btn {
   font-size: 1.8rem;
   color: #ffffff;
@@ -232,7 +306,7 @@ body a {
   color: #660033;
 }
 
-.footer .footer-row .footer-col .footer-icon, .features .feature-card .icon, .about .faqs .faqs-box .box .questions .icon, .header .basket {
+.footer .footer-row .footer-col .footer-icon, .features .feature-card .icon, .header .basket, .about .faqs .faqs-box .box .questions .icon {
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -317,7 +391,6 @@ body a {
   align-items: center;
   gap: 3.6rem;
   padding-top: 0;
-  background-color: aquamarine;
 }
 
 .bag {
@@ -342,77 +415,6 @@ body a {
 .cards .card {
   width: 6.4rem;
   height: auto;
-}
-
-.about .about-description {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5.4rem;
-}
-.about .about-description img {
-  border-radius: 2rem;
-  width: 100%;
-}
-.about .about-description p {
-  font-size: 1.8rem;
-  line-height: 1.5;
-}
-.about .about-description .div-subheader {
-  color: #660033;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.5;
-  font-style: italic;
-  font-size: 2rem;
-}
-.about .about-description span {
-  color: #660033;
-  font-style: italic;
-  font-weight: 600;
-}
-.about .faqs {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5.4rem;
-}
-.about .faqs h2 {
-  font-size: 3.6rem;
-}
-.about .faqs .faqs-text {
-  width: 45%;
-  line-height: 1.5;
-  margin-top: -3.6rem;
-}
-.about .faqs .faqs-text p {
-  font-size: 1.8rem;
-}
-.about .faqs .faqs-box {
-  width: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  background-color: #ffffff;
-  border: 1px solid #660033;
-  border-bottom: none;
-  border-radius: 5px;
-}
-.about .faqs .faqs-box .box {
-  border-bottom: 1px solid #660033;
-}
-.about .faqs .faqs-box .box .questions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 0 1.2rem;
-  color: #660033;
-}
-.about .faqs .faqs-box .box .questions h2 {
-  font-weight: 600;
-  font-size: 2rem;
-}
-.about .faqs .faqs-box .box .answer {
-  font-size: 1.8rem;
-  color: #484848;
-  display: none;
 }
 
 .features {
