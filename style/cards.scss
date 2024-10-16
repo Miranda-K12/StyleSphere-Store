@@ -45,3 +45,19 @@
         }
     }
 }
+@media (max-width: 1200px){
+.card-clothes{
+   grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 768px){
+.card-clothes{
+   grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 560px){
+.card-clothes{
+   grid-template-columns:  1fr;
+}
+}

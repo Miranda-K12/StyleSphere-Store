@@ -1,4 +1,6 @@
 
+@import './variables.scss';
+
 .hero {
   background-image: url("../images/hero-img.jpg");
   background-position: center;
@@ -8,48 +10,41 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  .hero-text{
+
+  .hero-text {
     position: absolute;
-    top:10%;
-    left:10%;
-    width:80%;
+    top: 10%;
+    left: 10%;
+    width: 80%;
     opacity: 0;
-    @extend .fade-in;
-    h1{
-      font-size: $h1-font-size;
-      color:$white;
+    @extend .fade-in; // Ensure .fade-in is defined elsewhere
+
+    h1 {
+      font-size: $h1-font-size; // Ensure this variable is defined
+      color: $white; // Ensure this variable is defined
       font-family: "Bodoni Moda";
     }
-    p{
+    p {
       text-align: center;
-      font-size: $div-header;
-      color:$white;
-      font-weight: $semi-bold;
+      font-size: $div-header; // Ensure this variable is defined
+      color: $white; // Ensure this variable is defined
+      font-weight: $semi-bold; // Ensure this variable is defined
       font-family: "Bodoni Moda";
     }
-    .btn{
-      @extend %btnStyle;
+
+    .btn {
+      @extend %btnStyle; // Ensure %btnStyle is defined
       margin: 0 auto;
       display: block;
-      &:hover{
-        @extend %btnHover;
+
+      &:hover {
+        @extend %btnHover; // Ensure %btnHover is defined
       }
     }
   }
 }
-@media (max-width: 840px) {
-  .hero-text {
-    top: 5%;
-    background-color: blue;
-    
-    h1 {
-      font-size: 72px; // Static value for testing
-      color: $white; // Ensure this is still applying
-    }
-
-    p {
-      text-align: center;
-      font-size: 24px; // Static value for testing
-    }
-  }
+@media (max-width: 840px){
+h1{
+font-size: 64px;
+}
 }
