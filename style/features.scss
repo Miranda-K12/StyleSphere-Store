@@ -29,3 +29,9 @@
     }
   }
 }
+//Responsive
+@media (max-width: 1200px) {
+    .features {
+  grid-template-columns: repeat(2, 1fr);
+}
+}

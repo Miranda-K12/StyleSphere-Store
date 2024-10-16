@@ -66,3 +66,24 @@ width:10.4rem;
   }
 }
 }
+.search-box{
+display:none;
+}
+//below 900px;
+@media (max-width: 900px) {
+ .nav-bar {
+        display: none; 
+    }
+  .search-box{
+        display: inline-block; 
+        font-size:$paraghrap-font-size;
+        border-radius: 0.5rem;
+        width: 40%; 
+        transition: width 0.3s ease; 
+        z-index: 10;
+        &:focus {
+            width: 45%; 
+            outline: none; 
+        }
+    }
+  }

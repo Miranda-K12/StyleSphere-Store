@@ -1,0 +1,95 @@
+.faqs .faqs-box .box .questions .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.div-header {
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.about-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5.4rem;
+}
+.about-description .right img {
+  border-radius: 2rem;
+  width: 100%;
+  align-content: center;
+}
+.about-description .about-store p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.about-description .about-store .div-subheader {
+  color: #660033;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.about-description .about-store span {
+  color: #660033;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.faqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5.4rem;
+}
+.faqs h2 {
+  font-size: 3.6rem;
+}
+.faqs .faqs-text {
+  line-height: 1.5;
+  margin-top: -3.6rem;
+}
+.faqs .faqs-text p {
+  font-size: 1.8rem;
+}
+.faqs .faqs-box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #ffffff;
+  border: 1px solid #660033;
+  border-radius: 5px;
+}
+.faqs .faqs-box .box {
+  border-bottom: 1px solid #660033;
+}
+.faqs .faqs-box .box:last-child {
+  border-bottom: none;
+}
+.faqs .faqs-box .box .questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 1.2rem;
+  color: #660033;
+}
+.faqs .faqs-box .box .questions h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.faqs .faqs-box .box .answer {
+  font-size: 1.8rem;
+  color: #484848;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .about-description, .faqs {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+  .faqs-text {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=about.css.map */

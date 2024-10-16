@@ -2,22 +2,18 @@
   width: 100%;
   background-color: $dark-purple;
   color: $white;
-  padding: 0 $big-padding;
+  padding: 0 $middle-padding;
   padding-bottom: $middle-padding;
-  .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:$gap-size;
     .footer-col {
       font-size: $paraghrap-font-size;
       @include flex-column;
-
       .links {
         padding: 0; 
         margin: 0; 
         @include flex-column;
-
         li {
           list-style: none;
           margin-bottom: 10px;
@@ -26,30 +22,20 @@
           text-align: center;
         }
       }
-
       .contact-info {
         display: block;
         margin-bottom: 10px;
-
         a {
           margin-bottom: 10px;
         }
       }
-
       .footer-icon {
         @extend %iconSize;
-
         .icons {
           display: flex;
           gap: $small-gap;
         }
       }
-
-      p {
-        max-width: 30rem; 
-        margin-top: -10px;
-      }
-
       h4 {
         font-size: $subheader-font-size;
         text-align: center;
@@ -57,13 +43,20 @@
         text-transform: capitalize;
         width: 100%;
       }
-
+      p{
+        font-size: $paraghrap-font-size;
+        margin-top: -10px;
+      }
       .form {
+        display: flex;
+        justify-content: space-between;
+        gap:1rem;
+        flex-direction: column;
+        width:100%;
         input {
-          height: 40px;
+          height: 4rem;
           border-radius: 6px;
           background: none;
-          width: 60%;
           outline: none;
           border: 1px solid $white;
           padding-left: 10px;
@@ -72,12 +65,10 @@
           &:focus {
             border: 2px solid $white;
           }
-
           &::placeholder {
             color: $light-pink;
           }
         }
-
         button {
           background: $white;
           outline: none;
@@ -96,4 +87,39 @@
       }
     }
   }
+
+@media (max-width: 1100px) {
+  h4{
+    font-size: $paraghrap-font-size;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 900px) {
+   .footer {
+  grid-template-columns: repeat(2, 1fr);
+   gap:0;
+}
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 0 $small-padding; /* Adjust padding as needed */
+    padding-bottom: $small-padding; /* Ensure padding at the bottom */
+  .footer-col {
+    font-size: 1.4rem; 
+    padding: 0; 
+    h4{
+      font-size: 1.6rem;
+    }
+       p {
+    font-size: 1.4rem; 
+  }
+  }
+  .form {
+    font-size: 1.2rem; 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+  }
+}
 }

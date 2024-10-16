@@ -1,3 +1,4 @@
+
 .hero {
   background-image: url("../images/hero-img.jpg");
   background-position: center;
@@ -7,7 +8,6 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  position: relative;
   .hero-text{
     position: absolute;
     top:10%;
@@ -34,6 +34,22 @@
       &:hover{
         @extend %btnHover;
       }
+    }
+  }
+}
+@media (max-width: 840px) {
+  .hero-text {
+    top: 5%;
+    background-color: blue;
+    
+    h1 {
+      font-size: 72px; // Static value for testing
+      color: $white; // Ensure this is still applying
+    }
+
+    p {
+      text-align: center;
+      font-size: 24px; // Static value for testing
     }
   }
 }
