@@ -266,7 +266,13 @@ h2, .div-header {
 }
 @media (max-width: 560px) {
   .hero .hero-text {
-    top: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background-color: red;
   }
 }
 .hero .hero-text h1 {
@@ -277,11 +283,6 @@ h2, .div-header {
 @media (max-width: 840px) {
   .hero .hero-text h1 {
     font-size: 6.4rem;
-  }
-}
-@media (max-width: 540px) {
-  .hero .hero-text h1 {
-    font-size: 3.6rem;
   }
 }
 .hero .hero-text p {
@@ -310,7 +311,6 @@ h2, .div-header {
 @media (max-width: 560px) {
   .hero .hero-text .btn {
     font-size: 1.6rem;
-    width: 50%;
   }
 }
 @media (max-width: 560px) {

@@ -16,7 +16,12 @@
     left: 10%;
     width: 80%;
     @media (max-width: 560px){
-        top:20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
       }
     h1 {
       font-size: $h1-font-size;
@@ -24,9 +29,6 @@
       font-family: "Bodoni Moda";
       @media (max-width: 840px){
         font-size: $h1-secondary-font;
-      }
-       @media (max-width: 540px){
-        font-size: $div-header;
       }
     }
     p {
@@ -50,7 +52,6 @@
       }
        @media (max-width: 560px){
          font-size: 1.6rem; 
-         width: 50%;
       }
       &:hover {
         @extend %btnHover; 
