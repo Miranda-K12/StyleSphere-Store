@@ -4,16 +4,30 @@
   display:grid;
   grid-template-columns: 40% 55%;
   gap: 4.8rem;
+  margin: 0 $big-margin;
   display: none;
+  @media (max-width: 1000px){
+    grid-template-columns: 1fr;
+    gap: $small-gap;
+  }
     .detail-img{
     width:100%;
     height: auto;
     border-radius: 2rem;
 }
 .detail-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   @media (max-width: 1000px){
+    align-items: center;
+   }
   .Product-name{
     @extend %product-name;
     position: relative;
+    @media (max-width: 1200px){
+      font-size: $header-font-size;
+    }
   }
   .Product-name::after,
   .full-description::after {
@@ -29,11 +43,17 @@
   .product-price{
     font-size: $subheader-font-size;
     font-weight: $semi-bold;
+     @media (max-width: 1200px){
+      font-size: $paraghrap-font-size;
+     }
   }
   .full-description {
     font-size: $paraghrap-font-size; 
     line-height: 1.5; 
     position: relative;
+     @media (max-width: 1200px){
+      font-size: $paraghrap-second-size; 
+     }
 }
 }
 .size-box{
@@ -50,6 +70,12 @@
     font-size: $paraghrap-font-size;
     width:4.8rem;
     height:4.8rem;
+    margin-top: $small-margin;
+    @media (max-width: 1200px){
+    font-size: $paraghrap-second-size;
+    width:3.6rem;
+    height:3.6rem;
+    }
     @include flex-item;
     font-weight: $semi-bold;
     color:$dark-purple;
@@ -73,15 +99,19 @@
 .cart-btn{
     @extend %btnStyle;
       display: block;
+       @media (max-width: 1200px){
+        
+       }
       &:hover{
          @extend %btnHover;
       }
   }
+
+
   .add-btn{
   margin-top: $medium-margin;
   margin-bottom: $medium-margin;
-  @extend %btnStyle;
-  display: block;
+  @extend %shopBtn;
   &:hover{
          @extend %btnHover;
       }
@@ -94,5 +124,8 @@
      .card{
     width:6.4rem;
     height: auto;
+    @media (max-width: 1200px){
+      width:4.8rem;
+    }
 }
 }

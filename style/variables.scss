@@ -35,6 +35,18 @@ $icon-size:2.4rem;
   text-align: center;
   cursor: pointer;
 }
+%shopBtn{
+  width:50%;
+  text-align: center;
+  background-color: $dark-purple;
+  font-size: $subheader-font-size;
+  color:$white;
+  display: block;
+  font-size: $btn; 
+  padding: $small-padding;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
 %btnHover{
   background-color: $light-pink;
   border: 2px solid $dark-purple;
