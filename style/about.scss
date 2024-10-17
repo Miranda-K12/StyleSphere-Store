@@ -2,11 +2,19 @@
 
 .div-header {
    @extend %div-header-style;
+    @media (max-width: 768px){
+        font-size: $header-font-size;
+     }
   }
 .about-description {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $big-margin;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr; 
+        gap: $small-margin; 
+        margin-top: $small-margin;
+    }
     .right {
         img {
             border-radius: 2rem;
@@ -40,14 +48,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: $big-margin;
+    @media (max-width: 1200px){
+        grid-template-columns: 1fr; 
+        gap: $small-margin; 
+        margin-top: $small-margin;
+    }
 
     h2 {
         font-size: $div-header;
     }
-
     .faqs-text {
         line-height: 1.5;
         margin-top: -3.6rem;
+        @media (max-width: 1200px) {
+            margin-top: -4.2rem;
+      }
         p {
             font-size: $paraghrap-font-size;
         }
@@ -57,14 +72,12 @@
         background-color: $white;
         border: 1px solid $dark-purple;  
         border-radius: 5px;
-
         .box {
             border-bottom: 1px solid $dark-purple;
 
             &:last-child {
                 border-bottom: none;
             }
-
             .questions {
                 @include flex-center;
                 justify-content: space-between;
@@ -90,14 +103,3 @@
     }
 }
 
-//max-width-1200 px
-@media (max-width: 1200px) {
-    .about-description, .faqs {
-        grid-template-columns: 1fr; 
-        gap: $small-margin; 
-        margin-top: $small-margin;
-    }
-        .faqs-text {
-        margin-top: 0;
-      }
-}

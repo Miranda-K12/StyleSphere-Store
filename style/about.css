@@ -9,10 +9,23 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .div-header {
+    font-size: 2.4rem;
+  }
+}
+
 .about-description {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5.4rem;
+}
+@media (max-width: 1200px) {
+  .about-description {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
 }
 .about-description .right img {
   border-radius: 2rem;
@@ -43,12 +56,24 @@
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5.4rem;
 }
+@media (max-width: 1200px) {
+  .faqs {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+}
 .faqs h2 {
   font-size: 3.6rem;
 }
 .faqs .faqs-text {
   line-height: 1.5;
   margin-top: -3.6rem;
+}
+@media (max-width: 1200px) {
+  .faqs .faqs-text {
+    margin-top: -4.2rem;
+  }
 }
 .faqs .faqs-text p {
   font-size: 1.8rem;
@@ -81,15 +106,4 @@
   font-size: 1.8rem;
   color: #484848;
   display: none;
-}
-
-@media (max-width: 1200px) {
-  .about-description, .faqs {
-    grid-template-columns: 1fr;
-    gap: 1.6rem;
-    margin-top: 1.6rem;
-  }
-  .faqs-text {
-    margin-top: 0;
-  }
 }/*# sourceMappingURL=about.css.map */

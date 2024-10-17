@@ -7,7 +7,6 @@
   background-color: #660033;
   padding: 1.2rem;
   border-radius: 1rem;
-  width: 16.6rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -47,7 +46,7 @@ h2, .div-header {
     opacity: 1;
   }
 }
-.fade-in, .hero .hero-text {
+.fade-in {
   animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
@@ -68,6 +67,11 @@ h2, .div-header {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 540px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -86,6 +90,16 @@ body .container {
 }
 body .container .section {
   margin-top: 5.4rem;
+}
+@media (max-width: 768px) {
+  body .container .section {
+    margin-top: 3.6rem;
+  }
+}
+@media (max-width: 540px) {
+  body .container .section {
+    margin-top: 1.6rem;
+  }
 }
 body a {
   text-decoration: none;
@@ -147,8 +161,28 @@ body a {
   width: 16.6rem;
   transition: width 0.3s ease;
 }
+@media (max-width: 540px) {
+  .header .nav-bar-list .search {
+    width: 12rem;
+  }
+}
+@media (max-width: 350px) {
+  .header .nav-bar-list .search {
+    width: 8rem;
+  }
+}
 .header .nav-bar-list .search:focus {
   width: 20rem;
+}
+@media (max-width: 540px) {
+  .header .nav-bar-list .search:focus {
+    width: 14rem;
+  }
+}
+@media (max-width: 350px) {
+  .header .nav-bar-list .search:focus {
+    width: 9rem;
+  }
 }
 .header .basket:hover {
   cursor: pointer;
@@ -183,7 +217,6 @@ body a {
   background-color: #660033;
   padding: 1.2rem;
   border-radius: 1rem;
-  width: 16.6rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -230,47 +263,91 @@ h2, .div-header {
   top: 10%;
   left: 10%;
   width: 80%;
-  opacity: 0;
+}
+@media (max-width: 560px) {
+  .hero .hero-text {
+    top: 20%;
+  }
 }
 .hero .hero-text h1 {
   font-size: 9.4rem;
   color: #ffffff;
   font-family: "Bodoni Moda";
 }
+@media (max-width: 840px) {
+  .hero .hero-text h1 {
+    font-size: 6.4rem;
+  }
+}
+@media (max-width: 540px) {
+  .hero .hero-text h1 {
+    font-size: 3.6rem;
+  }
+}
 .hero .hero-text p {
   text-align: center;
   font-size: 3.6rem;
   color: #ffffff;
+  margin-top: 1.6rem;
   font-weight: 600;
   font-family: "Bodoni Moda";
 }
-.hero .hero-text .btn {
-  margin: 0 auto;
-  display: block;
-}
-@media (max-width: 840px) {
-  h1 {
-    font-size: 64px;
+@media (max-width: 768px) {
+  .hero .hero-text p {
+    font-size: 2.2rem;
   }
 }
+.hero .hero-text .btn {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+}
+@media (max-width: 768px) {
+  .hero .hero-text .btn {
+    margin-top: 3.6rem;
+  }
+}
+@media (max-width: 560px) {
+  .hero .hero-text .btn {
+    font-size: 1.6rem;
+    width: 50%;
+  }
+}
+@media (max-width: 560px) {
+  .hero .hero-text .btn:hover {
+    font-size: 1.6rem;
+  }
+}
+
 .shop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
   margin-top: 5.4rem;
 }
-.shop .shopping-area {
+@media (max-width: 768px) {
+  .shop {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 1.6rem;
+  }
+}
+
+.shopping-area {
   width: 100%;
   border-radius: 2rem;
   position: relative;
   cursor: pointer;
 }
-.shop img {
+
+img {
   width: 100%;
   border-radius: 2rem;
   position: relative;
 }
-.shop .shop-area {
+
+.shop-area {
   position: absolute;
   background-color: #FFF4F2;
   color: #660033;
@@ -286,18 +363,15 @@ h2, .div-header {
   width: 60%;
   text-align: center;
 }
-.shop .shop-area:hover {
+@media (max-width: 768px) {
+  .shop-area {
+    width: 40%;
+  }
+}
+.shop-area:hover {
   border: 3px solid #660033;
 }
 
-@media (max-width: 768px) {
-  .shop {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.4rem;
-    margin-top: 1.6rem;
-  }
-}
 .card-clothes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -361,7 +435,6 @@ h2, .div-header {
   background-color: #660033;
   padding: 1.2rem;
   border-radius: 1rem;
-  width: 16.6rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -393,10 +466,23 @@ h2, .div-header {
   font-family: "Playfair Display", serif;
 }
 
+@media (max-width: 768px) {
+  .div-header {
+    font-size: 2.4rem;
+  }
+}
+
 .about-description {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5.4rem;
+}
+@media (max-width: 1200px) {
+  .about-description {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
 }
 .about-description .right img {
   border-radius: 2rem;
@@ -427,12 +513,24 @@ h2, .div-header {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5.4rem;
 }
+@media (max-width: 1200px) {
+  .faqs {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+}
 .faqs h2 {
   font-size: 3.6rem;
 }
 .faqs .faqs-text {
   line-height: 1.5;
   margin-top: -3.6rem;
+}
+@media (max-width: 1200px) {
+  .faqs .faqs-text {
+    margin-top: -4.2rem;
+  }
 }
 .faqs .faqs-text p {
   font-size: 1.8rem;
@@ -467,23 +565,12 @@ h2, .div-header {
   display: none;
 }
 
-@media (max-width: 1200px) {
-  .about-description, .faqs {
-    grid-template-columns: 1fr;
-    gap: 1.6rem;
-    margin-top: 1.6rem;
-  }
-  .faqs-text {
-    margin-top: 0;
-  }
-}
 .add-btn, .cart-btn, .hero .hero-text .btn {
   font-size: 1.8rem;
   color: #ffffff;
   background-color: #660033;
   padding: 1.2rem;
   border-radius: 1rem;
-  width: 16.6rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -642,6 +729,17 @@ h2, .div-header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 540px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .features .feature-header {
+    font-size: 2rem;
+  }
+  .features .feature-text {
+    font-size: 1.6rem;
+  }
+}
 .contact-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -714,9 +812,19 @@ h2, .div-header {
   font-size: 2.4rem;
   font-weight: 600;
 }
+@media (max-width: 540px) {
+  .contact-slogan {
+    font-size: 2rem;
+  }
+}
 
 p {
   font-size: 1.8rem;
+}
+@media (max-width: 540px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 
 .social-links p {
@@ -753,6 +861,19 @@ p {
     gap: 2.4rem;
     margin-top: 3.6rem;
   }
+}
+@media (max-width: 900px) and (max-width: 540px) {
+  .contact .contact-box .contact-us {
+    grid-template-columns: 1fr;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 900px) and (max-width: 540px) {
+  .contact .contact-box .contact-us .contact-info {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 900px) {
   .contact .contact-box .contact-us h5 {
     display: none;
   }

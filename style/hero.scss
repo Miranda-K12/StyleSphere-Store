@@ -10,41 +10,55 @@
   position: relative;
   height: 100vh;
   width: 100%;
-
   .hero-text {
     position: absolute;
     top: 10%;
     left: 10%;
     width: 80%;
-    opacity: 0;
-    @extend .fade-in; // Ensure .fade-in is defined elsewhere
-
+    @media (max-width: 560px){
+        top:20%;
+      }
     h1 {
-      font-size: $h1-font-size; // Ensure this variable is defined
-      color: $white; // Ensure this variable is defined
+      font-size: $h1-font-size;
+      color: $white; 
       font-family: "Bodoni Moda";
+      @media (max-width: 840px){
+        font-size: $h1-secondary-font;
+      }
+       @media (max-width: 540px){
+        font-size: $div-header;
+      }
     }
     p {
       text-align: center;
-      font-size: $div-header; // Ensure this variable is defined
-      color: $white; // Ensure this variable is defined
-      font-weight: $semi-bold; // Ensure this variable is defined
+      font-size: $div-header; 
+      color: $white; 
+      margin-top: $small-margin;
+      font-weight: $semi-bold; 
       font-family: "Bodoni Moda";
+       @media (max-width: 768px){
+        font-size:$header-second-font;
+      }
     }
-
     .btn {
-      @extend %btnStyle; // Ensure %btnStyle is defined
-      margin: 0 auto;
+      @extend %btnStyle; 
       display: block;
-
+      margin:0 auto;
+      width:20rem;
+       @media (max-width: 768px){
+        margin-top: $medium-margin;
+      }
+       @media (max-width: 560px){
+         font-size: 1.6rem; 
+         width: 50%;
+      }
       &:hover {
-        @extend %btnHover; // Ensure %btnHover is defined
+        @extend %btnHover; 
+         @media (max-width: 560px){
+        font-size: 1.6rem;
+      }
       }
     }
   }
 }
-@media (max-width: 840px){
-h1{
-font-size: 64px;
-}
-}
+

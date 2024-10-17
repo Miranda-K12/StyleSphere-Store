@@ -3,6 +3,13 @@
  grid-template-columns: repeat(3, 1fr);
  gap:$small-gap;
  margin-top: $big-margin;
+ @media (max-width: 768px){
+  display: grid;
+ grid-template-columns:1fr;
+ gap:$small-gap;
+ margin-top: $small-margin;
+  }
+ }
 .shopping-area {
   width: 100%;
   border-radius: 2rem;
@@ -29,16 +36,14 @@
   letter-spacing: 1.5;
   width:60%;
   text-align: center;
-  &:hover{
+  @media (max-width: 768px){
+      width:40%;
+  }
+&:hover{
     border: 3px solid $dark-purple;
   }
   }
-  }
-  @media (max-width: 768px){
-    .shop{
- display: grid;
- grid-template-columns:1fr;
- gap:$small-gap;
- margin-top: $small-margin;
-  }
-}
+  
+  
+  
+ 

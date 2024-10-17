@@ -52,8 +52,20 @@ width:10.4rem;
   border-radius: 0.5rem;
   width: 16.6rem;
   transition: width 0.3s ease;
+    @media (max-width: 540px) {
+      width: 12rem;
+    }
+    @media (max-width: 350px) {
+      width: 8rem;
+    }
    &:focus {
         width: 20rem; 
+         @media (max-width: 540px) {
+      width: 14rem;
+    }
+     @media (max-width: 350px) {
+      width: 9rem;
+    }
     }
 }
 }
@@ -87,3 +99,4 @@ display:none;
         }
     }
   }
+     

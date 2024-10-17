@@ -9,7 +9,6 @@
     box-shadow: 9px 10px 9px 2px rgb(209, 198, 209);
     padding: 0 $small-padding;
     border-radius: 2rem;
-
     .feature-header {
       @include flex-item;
       font-size: $header-font-size;
@@ -33,5 +32,16 @@
 @media (max-width: 1200px) {
     .features {
   grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 540px) {
+    .features {
+  grid-template-columns: 1fr;
+   .feature-header{
+     font-size: $subheader-font-size;
+   }
+   .feature-text {
+      font-size: $paraghrap-second-size;
+}
 }
 }

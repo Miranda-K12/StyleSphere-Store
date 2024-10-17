@@ -1,0 +1,88 @@
+.hero .hero-text .btn {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #660033;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero .hero-text .btn:hover {
+  background-color: #FFF4F2;
+  border: 2px solid #660033;
+  color: #660033;
+}
+
+.hero {
+  background-image: url("../images/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s ease-in-out;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.hero .hero-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+}
+@media (max-width: 560px) {
+  .hero .hero-text {
+    top: 20%;
+  }
+}
+.hero .hero-text h1 {
+  font-size: 9.4rem;
+  color: #ffffff;
+  font-family: "Bodoni Moda";
+}
+@media (max-width: 840px) {
+  .hero .hero-text h1 {
+    font-size: 6.4rem;
+  }
+}
+@media (max-width: 540px) {
+  .hero .hero-text h1 {
+    font-size: 3.6rem;
+  }
+}
+.hero .hero-text p {
+  text-align: center;
+  font-size: 3.6rem;
+  color: #ffffff;
+  margin-top: 1.6rem;
+  font-weight: 600;
+  font-family: "Bodoni Moda";
+}
+@media (max-width: 768px) {
+  .hero .hero-text p {
+    font-size: 2.2rem;
+  }
+}
+.hero .hero-text .btn {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+}
+@media (max-width: 768px) {
+  .hero .hero-text .btn {
+    margin-top: 3.6rem;
+  }
+}
+@media (max-width: 560px) {
+  .hero .hero-text .btn {
+    font-size: 1.6rem;
+    width: 50%;
+  }
+}
+@media (max-width: 560px) {
+  .hero .hero-text .btn:hover {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=hero.css.map */

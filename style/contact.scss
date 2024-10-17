@@ -72,9 +72,15 @@ gap:1rem;
     color:$dark-purple;
     font-size: $header-font-size;
     font-weight: $semi-bold;
+    @media (max-width: 540px){
+      font-size: $subheader-font-size;
+    }
   }
   p{
     font-size: $paraghrap-font-size;
+    @media (max-width: 540px){
+      font-size: $paraghrap-second-size;
+    }
   }
   .social-links{
     p{
@@ -96,7 +102,6 @@ gap:1rem;
 h2{
   margin-bottom: 0;
 }
- 
   .contact-box{
     grid-template-columns: 1fr;
     padding-top: 0;
@@ -112,6 +117,15 @@ h2{
       grid-template-columns: repeat(2, 1fr);
       gap:$small-gap;
       margin-top: $medium-margin;
+      @media (max-width: 540px){
+        grid-template-columns: 1fr;
+        font-size: $paraghrap-second-size;
+      }
+      .contact-info{
+        @media (max-width: 540px){
+        font-size: $paraghrap-second-size;
+      }
+      }
       h5{
         display: none;
       }
