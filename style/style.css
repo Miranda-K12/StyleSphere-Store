@@ -63,6 +63,10 @@ h2, .div-header {
   animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
+.fade-answer, .faqs .faqs-box .box .answer {
+  animation: fadeIn 1s ease-in-out;
+}
+
 @keyframes dropdown {
   0% {
     max-height: 0;
@@ -664,6 +668,12 @@ h2, .div-header {
   font-size: 1.8rem;
   color: #484848;
   display: none;
+  padding: 0 1.2rem;
+  transition: all 1s ease;
+}
+.faqs .faqs-box .box .display-answer {
+  display: block;
+  height: auto;
 }
 
 .cart-btn, .hero .hero-text .btn {

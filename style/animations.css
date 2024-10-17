@@ -10,6 +10,10 @@
   animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
+.fade-answer {
+  animation: fadeIn 1s ease-in-out;
+}
+
 @keyframes dropdown {
   0% {
     max-height: 0;

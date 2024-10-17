@@ -98,6 +98,13 @@
                 font-size: $paraghrap-font-size;
                 color: $dark-grey;
                 display: none;
+                padding: 0 $small-padding;
+                transition: all 1s ease;
+                @extend .fade-answer;
+            }
+            .display-answer{
+                 display: block;
+                 height: auto;
             }
         }
     }
